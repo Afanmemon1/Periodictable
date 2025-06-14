@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Half Periodic Table</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(10, 60px);
+      grid-gap: 5px;
+    }
+
+    .element {
+      width: 60px;
+      height: 60px;
+      background: #1e90ff;
+      border: 2px solid #fff;
+      color: #fff;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 5px #00f;
+    }
+
+    .metal { background-color: #f39c12; }
+    .non-metal { background-color: #2ecc71; }
+    .metalloid { background-color: #9b59b6; }
+    .inert { background-color: #e74c3c; }
+    .empty {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="non-metal">H</div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="inert">He</div>
+
+    <!-- Row 2 -->
+    <div class="metal">Li</div><div class="metal">Be</div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="metalloid">B</div><div class="non-metal">C</div><div class="non-metal">N</div><div class="non-metal">O</div>
+
+    <!-- Row 3 -->
+    <div class="metal">Na</div><div class="metal">Mg</div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="metal">Al</div><div class="metalloid">Si</div><div class="non-metal">P</div><div class="non-metal">S</div>
+
+    <!-- Row 4 -->
+    <div class="metal">K</div><div class="metal">Ca</div><div class="metal">Sc</div><div class="metal">Ti</div>
+    <div class="metal">V</div><div class="metal">Cr</div>
+    <div class="metal">Mn</div><div class="metal">Fe</div><div class="metal">Co</div><div class="metal">Ni</div>
+  </div>
+</body>
+</html>
